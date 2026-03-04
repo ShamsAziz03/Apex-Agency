@@ -25,6 +25,9 @@ nav {
   gap: 5%;
   border: 1px solid black;
 }
+nav .links {
+  flex: 2;
+}
 nav a {
   text-decoration: underline;
   color: rgb(255, 255, 255);
@@ -160,7 +163,7 @@ main {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   row-gap: 20px;
   margin: 5%;
@@ -205,7 +208,7 @@ main {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 20px 10%;
   grid-gap: 20px;
   row-gap: 20px;
@@ -301,6 +304,7 @@ main {
 .footer .footerSectionOne h3 {
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .footer .footerSectionOne .quickLinks p a {
@@ -338,8 +342,8 @@ header a:hover {
   color: rgb(71, 25, 69);
   font-weight: bold;
   font-size: 21px;
+  box-shadow: 2px 2px 5px rgb(224, 206, 226);
   padding: 5px;
-  outline: 1px solid rgb(224, 206, 226);
 }
 
 .footer .footerSectionOne p a:hover {
@@ -378,4 +382,283 @@ header a:focus-visible {
   font-weight: bold;
   font-size: 17px;
   box-shadow: 4px 4px 5px rgb(193, 155, 194);
+}
+
+/* Extra small devices - phones */
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  #logo {
+    height: 70px;
+    width: 70px;
+    margin-top: -15px;
+  }
+  nav {
+    gap: 10px;
+    padding: 10px;
+  }
+  nav .links {
+    flex: 2;
+  }
+  nav a {
+    font-size: 15px;
+    margin-right: 7px;
+  }
+  nav button {
+    padding: 5px;
+    font-size: 10px;
+  }
+  #heroDiv {
+    width: 70%;
+  }
+  #heroSection h1 {
+    font-size: 23px;
+  }
+  #heroSection h2 {
+    font-size: 19px;
+  }
+  #description {
+    font-size: 15px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+  .buttons button {
+    padding: 7px;
+  }
+  .serviceDescription2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .serviceDescription2 h2 {
+    font-size: 25px;
+  }
+  .serviceDescription2 p {
+    font-size: 15px;
+  }
+  .services {
+    margin: 0px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  #testimonialsSection {
+    margin-top: 50px;
+  }
+  #testimonialsSection h2 {
+    font-size: 25px;
+  }
+  .testimonials {
+    margin: 0px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .testimonial blockquote {
+    font-size: 15px;
+  }
+  .footer {
+    margin-top: 30px;
+    padding: 40px 10% 40px 10%;
+  }
+  .footer .footerSectionOne {
+    grid-gap: 20px;
+  }
+  header a:focus-visible,
+  header a:focus,
+  header a:hover {
+    color: rgb(199, 188, 203);
+    font-size: 17px;
+    font-weight: 900;
+    outline: 0px 0px 0px black;
+  }
+}
+
+/* Small devices - large phones */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  #logo {
+    height: 100px;
+    width: 100px;
+    margin-top: -10px;
+  }
+  nav {
+    gap: 20px;
+  }
+  nav .links {
+    flex: 2;
+  }
+  nav a {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  nav button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #heroDiv {
+    width: 60%;
+    gap: 18px;
+  }
+  #heroSection h1 {
+    font-size: 25px;
+  }
+  #heroSection h2 {
+    font-size: 21px;
+  }
+  #description {
+    font-size: 17px;
+  }
+  .buttons {
+    gap: 15px;
+  }
+  .buttons button {
+    padding: 10px;
+  }
+  .serviceDescription2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .serviceDescription2 h2 {
+    font-size: 28px;
+  }
+  .serviceDescription2 p {
+    font-size: 17px;
+  }
+  .services {
+    margin: 0px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .service {
+    padding: 15px;
+  }
+  .service h3 {
+    margin-top: 0px;
+  }
+  #testimonialsSection {
+    margin-top: 50px;
+  }
+  #testimonialsSection h2 {
+    font-size: 25px;
+  }
+  .testimonials {
+    margin: 0px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .testimonial blockquote {
+    font-size: 16px;
+  }
+  .footer {
+    margin-top: 30px;
+    padding: 40px;
+  }
+  .footer .footerSectionOne {
+    grid-gap: 5px;
+  }
+  header a:focus-visible,
+  header a:focus,
+  header a:hover,
+  .footer .footerSectionOne p a:focus-visible,
+  .footer .footerSectionOne p a:focus,
+  .footer .footerSectionOne p a:hover {
+    color: rgb(199, 188, 203);
+    font-size: 15px;
+    font-weight: 900;
+    outline: 0px 0px 0px black;
+    box-shadow: 1px 1px 5px rgb(193, 155, 194);
+  }
+}
+
+/* Medium devices - tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #logo {
+    height: 110px;
+    width: 110px;
+    margin-top: -10px;
+  }
+  nav {
+    gap: 40px;
+  }
+  nav .links {
+    flex: 2;
+  }
+  nav a {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+  nav button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #heroDiv {
+    width: 70%;
+    gap: 20px;
+  }
+  #heroSection h1 {
+    font-size: 28px;
+  }
+  #heroSection h2 {
+    font-size: 25px;
+  }
+  #description {
+    font-size: 20px;
+  }
+  .buttons {
+    gap: 20px;
+  }
+  .buttons button {
+    padding: 13px;
+    font-size: 15px;
+  }
+  .serviceDescription2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .serviceDescription2 h2 {
+    font-size: 28px;
+  }
+  .serviceDescription2 p {
+    font-size: 18px;
+  }
+  .services {
+    margin: 5px;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .service {
+    padding: 25px;
+  }
+  .service h3 {
+    margin-top: 0px;
+  }
+  #testimonialsSection {
+    margin-top: 50px;
+  }
+  #testimonialsSection h2 {
+    font-size: 25px;
+  }
+  .testimonials {
+    margin: 5px;
+    padding: 15px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .testimonial blockquote {
+    font-size: 17px;
+  }
+  .footer {
+    margin-top: 30px;
+    padding: 40px;
+  }
+  .footer .footerSectionOne {
+    grid-gap: 5px;
+  }
+  header a:focus-visible,
+  header a:focus,
+  header a:hover,
+  .footer .footerSectionOne p a:focus-visible,
+  .footer .footerSectionOne p a:focus,
+  .footer .footerSectionOne p a:hover {
+    color: rgb(197, 182, 202);
+    font-size: 17px;
+    font-weight: 900;
+    outline: 0px 0px 0px black;
+    box-shadow: 2px 2px 5px rgb(193, 155, 194);
+  }
 }

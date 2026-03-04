@@ -178,7 +178,7 @@ main {
 }
 
 .service i {
-  font-size: 32px;
+  font-size: 28px;
   color: rgb(188, 160, 190);
   border: 1px solid white;
   padding: 10px;
@@ -188,6 +188,11 @@ main {
 
 .service p {
   font-size: 15px;
+}
+
+.service h3 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 #testimonialsSection {
@@ -207,7 +212,7 @@ main {
 }
 
 .testimonial h3,
-.testimonial h5 {
+.testimonial p {
   padding: 0px;
   margin: 0px;
 }
@@ -220,20 +225,13 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 20px 30px;
 }
 
 .testimonial figcaption i {
   display: block;
   font-size: 27px;
-}
-
-.testimonial blockquote {
-  flex: 3;
-  font-size: 17px;
-  margin: 0px;
-  text-align: center;
 }
 
 .testimonial figcaption {
@@ -245,14 +243,23 @@ main {
   justify-content: flex-start;
   align-items: center;
 }
-.testimonial figcaption h5 {
+
+.testimonial blockquote {
+  flex: 3;
+  font-size: 17px;
+  margin: 0px;
+  text-align: center;
+}
+
+.testimonial figcaption div p {
   font-size: 13px;
   color: rgb(108, 87, 119);
   font-weight: 700;
 }
 
-.testimonial figcaption h3 {
+.testimonial figcaption div h3 {
   font-size: 15px;
+  font-weight: 600;
 }
 
 .footer {
@@ -273,9 +280,6 @@ main {
   align-items: flex-start;
   color: rgb(208, 187, 221);
 }
-.footer .footerSectionOne h1{
-  font-size: 23px;
-}
 
 .footer .footerSectionOne .companyInfo {
   text-align: center;
@@ -284,33 +288,34 @@ main {
 .footer .footerSectionOne .companyInfo p i,
 .footer .footerSectionOne .socials p i {
   margin-right: 15px;
-  font-size: 23px;
+  font-size: 17px;
 }
 
-.footer .footerSectionOne .companyInfo h2,
+.footer .footerSectionOne .companyInfo p a,
 .footer .footerSectionOne .companyInfo p {
   font-size: 17px;
   font-weight: 500;
+  color: rgb(208, 187, 221);
 }
 
-.footer .footerSectionOne .companyInfo h3 {
-  font-size: 15px;
-  font-weight: 300;
+.footer .footerSectionOne h3 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .footer .footerSectionOne .quickLinks p a {
   color: rgb(219, 197, 219);
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .footer .footerSectionOne .footerServices ul li {
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 16px;
   font-weight: 400;
 }
 
 .footer .footerSectionOne .socials p {
-  font-size: 17px;
+  font-size: 15px;
 }
 .footer .footerSectionOne .socials p a {
   text-decoration: none;
@@ -321,4 +326,56 @@ main {
   color: rgb(219, 197, 219);
   font-size: 16px;
   text-align: center;
+}
+
+button:hover {
+  background-color: rgb(50, 9, 53);
+  color: rgb(255, 255, 255);
+  outline: 0.5px solid white;
+}
+
+header a:hover {
+  color: rgb(71, 25, 69);
+  font-weight: bold;
+  font-size: 21px;
+  padding: 5px;
+  outline: 1px solid rgb(224, 206, 226);
+}
+
+.footer .footerSectionOne p a:hover {
+  color: rgb(170, 132, 181);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  outline: 1px solid rgb(205, 193, 211);
+}
+
+.buttons button:focus,
+nav button:focus {
+  box-shadow: 5px 5px 5px rgba(232, 224, 224, 0.3);
+  background-color: rgb(68, 14, 93);
+  color: white;
+}
+
+.buttons button:focus-visible,
+nav button:focus-visible {
+  box-shadow: 5px 5px 5px rgba(232, 224, 224, 0.3);
+  background-color: rgb(89, 55, 106);
+  color: white;
+}
+
+.footer .footerSectionOne p a:focus,
+header a:focus {
+  color: rgb(197, 175, 196);
+  font-weight: bold;
+  font-size: 19px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgb(193, 155, 194);
+}
+.footer .footerSectionOne p a:focus-visible,
+header a:focus-visible {
+  color: rgb(177, 155, 176);
+  font-weight: bold;
+  font-size: 17px;
+  box-shadow: 4px 4px 5px rgb(193, 155, 194);
 }

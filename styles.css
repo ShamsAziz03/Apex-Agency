@@ -16,6 +16,7 @@ header {
 nav {
   background-color: rgb(113, 90, 122);
   position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -25,34 +26,37 @@ nav {
   gap: 5%;
   border: 1px solid black;
 }
+
+nav div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav .links {
   flex: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 nav a {
   text-decoration: underline;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   margin-right: 30px;
   font-weight: 800;
 }
 
-#logo {
-  height: 120px;
-  width: 160px;
-  margin-bottom: -40px;
-}
-
-nav div {
-  flex: 1;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+.logoDiv{
+  height: 75px;
 }
 
 nav button {
   border-radius: 20px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   color: rgb(74, 2, 78);
   background-color: rgb(215, 193, 215);
   font-weight: 700;
@@ -81,8 +85,6 @@ main {
 #heroSection h1,
 #heroSection h2 {
   margin: 0px;
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -98,7 +100,7 @@ main {
 
 #description {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 
 .buttons {
@@ -115,7 +117,7 @@ main {
   padding: 13px;
   color: rgb(74, 2, 78);
   background-color: rgb(215, 193, 215);
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   font-weight: 700;
   border-radius: 15px;
 }
@@ -149,14 +151,14 @@ main {
   text-align: center;
 }
 .serviceDescription2 p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
   color: rgb(84, 38, 97);
 }
 
 .serviceDescription2 h2,
 #testimonialsSection h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   font-weight: 700;
   color: rgb(42, 7, 51);
 }
@@ -181,7 +183,7 @@ main {
 }
 
 .service i {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   color: rgb(188, 160, 190);
   border: 1px solid white;
   padding: 10px;
@@ -190,11 +192,11 @@ main {
 }
 
 .service p {
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
 }
 
 .service h3 {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
 }
 
@@ -234,7 +236,7 @@ main {
 
 .testimonial figcaption i {
   display: block;
-  font-size: 27px;
+  font-size: 1.6875rem; /* 27px */
 }
 
 .testimonial figcaption {
@@ -249,19 +251,19 @@ main {
 
 .testimonial blockquote {
   flex: 3;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
   margin: 0px;
   text-align: center;
 }
 
 .testimonial figcaption div p {
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   color: rgb(108, 87, 119);
   font-weight: 700;
 }
 
 .testimonial figcaption div h3 {
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 600;
 }
 
@@ -291,35 +293,35 @@ main {
 .footer .footerSectionOne .companyInfo p i,
 .footer .footerSectionOne .socials p i {
   margin-right: 15px;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
 }
 
 .footer .footerSectionOne .companyInfo p a,
 .footer .footerSectionOne .companyInfo p {
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
   font-weight: 500;
   color: rgb(208, 187, 221);
 }
 
 .footer .footerSectionOne h3 {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
   text-align: center;
 }
 
-.footer .footerSectionOne .quickLinks p a {
+.footer .footerSectionOne .quickLinks ul li a {
   color: rgb(219, 197, 219);
-  font-size: 15px;
 }
 
-.footer .footerSectionOne .footerServices ul li {
-  font-size: 15px;
+.footer .footerSectionOne .footerServices ul li,
+.footer .footerSectionOne .quickLinks ul li {
+  font-size: 0.9375rem; /* 15px */
   margin-top: 16px;
   font-weight: 400;
 }
 
 .footer .footerSectionOne .socials p {
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
 }
 .footer .footerSectionOne .socials p a {
   text-decoration: none;
@@ -328,7 +330,7 @@ main {
 
 .footer .copyRight {
   color: rgb(219, 197, 219);
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   text-align: center;
 }
 
@@ -341,15 +343,16 @@ button:hover {
 header a:hover {
   color: rgb(71, 25, 69);
   font-weight: bold;
-  font-size: 21px;
+  font-size: 1.3125rem; /* 21px */
   box-shadow: 2px 2px 5px rgb(224, 206, 226);
   padding: 5px;
 }
 
-.footer .footerSectionOne p a:hover {
+.footer .footerSectionOne p a:hover,
+.footer .footerSectionOne ul li a:hover {
   color: rgb(170, 132, 181);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   padding: 5px;
   outline: 1px solid rgb(205, 193, 211);
 }
@@ -369,54 +372,55 @@ nav button:focus-visible {
 }
 
 .footer .footerSectionOne p a:focus,
+.footer .footerSectionOne ul li a:focus,
 header a:focus {
   color: rgb(197, 175, 196);
   font-weight: bold;
-  font-size: 19px;
+  font-size: 1.1875rem; /* 19px */
   padding: 5px;
   box-shadow: 5px 5px 5px rgb(193, 155, 194);
 }
 .footer .footerSectionOne p a:focus-visible,
+.footer .footerSectionOne ul li a:focus-visible,
 header a:focus-visible {
   color: rgb(177, 155, 176);
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
   box-shadow: 4px 4px 5px rgb(193, 155, 194);
 }
 
 /* Extra small devices - phones */
 @media screen and (min-width: 320px) and (max-width: 599px) {
   #logo {
-    height: 70px;
-    width: 70px;
-    margin-top: -15px;
+    height: 90px;
+    width: 90px;
+  }
+  .logoDiv{
+    height: 50px;
   }
   nav {
     gap: 10px;
     padding: 10px;
   }
-  nav .links {
-    flex: 2;
-  }
   nav a {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     margin-right: 7px;
   }
   nav button {
     padding: 5px;
-    font-size: 10px;
+    font-size: 0.625rem; /* 10px */
   }
   #heroDiv {
     width: 70%;
   }
   #heroSection h1 {
-    font-size: 23px;
+    font-size: 1.4375rem; /* 23px */
   }
   #heroSection h2 {
-    font-size: 19px;
+    font-size: 1.1875rem; /* 19px */
   }
   #description {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   .buttons {
     gap: 10px;
@@ -429,10 +433,10 @@ header a:focus-visible {
     margin-bottom: 20px;
   }
   .serviceDescription2 h2 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   .serviceDescription2 p {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   .services {
     margin: 0px;
@@ -443,7 +447,7 @@ header a:focus-visible {
     margin-top: 50px;
   }
   #testimonialsSection h2 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   .testimonials {
     margin: 0px;
@@ -451,7 +455,7 @@ header a:focus-visible {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   .testimonial blockquote {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   .footer {
     margin-top: 30px;
@@ -464,7 +468,7 @@ header a:focus-visible {
   header a:focus,
   header a:hover {
     color: rgb(199, 188, 203);
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
     font-weight: 900;
     outline: 0px 0px 0px black;
   }
@@ -475,34 +479,30 @@ header a:focus-visible {
   #logo {
     height: 100px;
     width: 100px;
-    margin-top: -10px;
   }
   nav {
     gap: 20px;
   }
-  nav .links {
-    flex: 2;
-  }
   nav a {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     margin-right: 10px;
   }
   nav button {
     padding: 8px;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
   }
   #heroDiv {
     width: 60%;
     gap: 18px;
   }
   #heroSection h1 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   #heroSection h2 {
-    font-size: 21px;
+    font-size: 1.3125rem; /* 21px */
   }
   #description {
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
   }
   .buttons {
     gap: 15px;
@@ -515,10 +515,10 @@ header a:focus-visible {
     margin-bottom: 20px;
   }
   .serviceDescription2 h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
   }
   .serviceDescription2 p {
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
   }
   .services {
     margin: 0px;
@@ -535,7 +535,7 @@ header a:focus-visible {
     margin-top: 50px;
   }
   #testimonialsSection h2 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   .testimonials {
     margin: 0px;
@@ -543,7 +543,7 @@ header a:focus-visible {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   .testimonial blockquote {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
   .footer {
     margin-top: 30px;
@@ -557,9 +557,12 @@ header a:focus-visible {
   header a:hover,
   .footer .footerSectionOne p a:focus-visible,
   .footer .footerSectionOne p a:focus,
-  .footer .footerSectionOne p a:hover {
+  .footer .footerSectionOne p a:hover,
+  .footer .footerSectionOne ul li a:focus-visible,
+  .footer .footerSectionOne ul li a:focus,
+  .footer .footerSectionOne ul li a:hover {
     color: rgb(199, 188, 203);
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-weight: 900;
     outline: 0px 0px 0px black;
     box-shadow: 1px 1px 5px rgb(193, 155, 194);
@@ -571,51 +574,47 @@ header a:focus-visible {
   #logo {
     height: 110px;
     width: 110px;
-    margin-top: -10px;
   }
   nav {
     gap: 40px;
   }
-  nav .links {
-    flex: 2;
-  }
   nav a {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     margin-right: 12px;
   }
   nav button {
     padding: 10px;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   #heroDiv {
     width: 70%;
     gap: 20px;
   }
   #heroSection h1 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
   }
   #heroSection h2 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   #description {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
   }
   .buttons {
     gap: 20px;
   }
   .buttons button {
     padding: 13px;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
   }
   .serviceDescription2 {
     margin-top: 40px;
     margin-bottom: 20px;
   }
   .serviceDescription2 h2 {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
   }
   .serviceDescription2 p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
   }
   .services {
     margin: 5px;
@@ -632,7 +631,7 @@ header a:focus-visible {
     margin-top: 50px;
   }
   #testimonialsSection h2 {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
   }
   .testimonials {
     margin: 5px;
@@ -640,7 +639,7 @@ header a:focus-visible {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .testimonial blockquote {
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
   }
   .footer {
     margin-top: 30px;
@@ -654,9 +653,12 @@ header a:focus-visible {
   header a:hover,
   .footer .footerSectionOne p a:focus-visible,
   .footer .footerSectionOne p a:focus,
-  .footer .footerSectionOne p a:hover {
+  .footer .footerSectionOne p a:hover,
+  .footer .footerSectionOne ul li a:focus-visible,
+  .footer .footerSectionOne ul li a:focus,
+  .footer .footerSectionOne ul li a:hover {
     color: rgb(197, 182, 202);
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
     font-weight: 900;
     outline: 0px 0px 0px black;
     box-shadow: 2px 2px 5px rgb(193, 155, 194);

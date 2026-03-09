@@ -258,8 +258,9 @@ main {
 
 .testimonial figcaption div p {
   font-size: 0.8125rem; /* 13px */
-  color: rgb(108, 87, 119);
+  color: rgb(57, 19, 80);
   font-weight: 700;
+  padding-top: 5px;
 }
 
 .testimonial figcaption div h3 {
